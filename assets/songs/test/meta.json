@@ -1,7 +1,7 @@
 {
     "name": "Test",
     "bpm": 150.0,
-    "icon": "bf-pixel",
+    "icon": "bf",
     "color": "#7BD6F6",
     "difficulties": [
         "Normal"
