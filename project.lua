@@ -1,15 +1,15 @@
 return {
 	DEBUG_MODE = true,
 
-	title = "Friday Night Funkin' Löve",
-	file = "FNF-LOVE",
+	title = "Sunday Night Suicide PS1",
+	file = "SNS-PS1",
 	icon = "art/icon.png",
 	version = "1.0.0-dev",
-	package = "com.stilic.fnflove",
-	width = 1280,
+	package = "com.jogadorice.snsps1",
+	width = 960,
 	height = 720,
 	FPS = 60,
-	company = "Stilic",
+	company = "Jogadorice",
 
 	flags = {
 		checkForUpdates = false,
