@@ -2,6 +2,8 @@ local IntroState = State:extend("IntroState")
 
 function IntroState:enter()
 
+    love.mouse.setVisible(true)
+
     introVideo = Video(0, 0, "ps1_intro")
     introVideo.x = game.width / 2 - introVideo.width / 2
     introVideo:play()

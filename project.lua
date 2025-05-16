@@ -1,7 +1,7 @@
 return {
 	DEBUG_MODE = true,
 
-	title = "Sunday Night Suicide PS1",
+	title = "sns_ps1",
 	file = "SNS-PS1",
 	icon = "art/icon.png",
 	version = "1.0.0-dev",

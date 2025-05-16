@@ -3,8 +3,11 @@ local TitleState = State:extend("TitleState")
 TitleState.initialized = false
 
 function TitleState:enter()
+	shader = Shader("compression")
 
 	util.playMenuMusic(false)
+
+	--game.camera.shader = shader:get()
 
 	local whiteBg = Sprite(0, 0, paths.getImage("menus/title/White_BG"))
 	whiteBg.scale:set(1.25,1.25)
@@ -28,10 +31,22 @@ function TitleState:enter()
 	logo:play("idle", true)
 	self:add(logo)
 
-	local startTxt = Sprite(50, game.height - 150, paths.getImage("menus/title/START_GAME"))
+	startTxt = Sprite(50, game.height - 150, paths.getImage("menus/title/START_GAME"))
 	self:add(startTxt)
 
 	TitleState.super.enter(self)
+end
+
+function TitleState:update(dt)
+	if game.mouse.x >= startTxt.x and game.mouse.x <= startTxt.x + startTxt.width and
+		game.mouse.y >= startTxt.y and game.mouse.y <= startTxt.y + startTxt.height then
+		if game.mouse.justPressedLeft then
+			util.playSfx(paths.getSound("confirm"), 1)
+			game.switchState(MainMenuState(), true)
+		end
+	end
+
+	TitleState.super.update(self, dt)
 end
 
 return TitleState
