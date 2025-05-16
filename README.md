@@ -3,11 +3,25 @@ SNS PS1 is a simulator or emulator of a centralized, twisted version of a [Frida
 
 This mod is based on the popular creepypasta *suicidemouse.avi*, originally written by Alexander Culafi on October 22, 2009, on 4chan. It which features a looped animation of the Disney character Mickey Mouse walking in several buildings in black-and-white, accompanied by eerie piano music. The video also includes extended cuts to black for several minutes, eventually returning with distorted visuals and loud, screaming audio at the end. In the main story of the mod, Boyfriend meet Mickey Mouse walking through the streets, as shown in the original video. However, the story takes a twist, with the both of the characters in a rap battle in the middle of the street.
 
-# Libraries
-- [baton](https://github.com/tesselode/baton)
-- [classic](https://github.com/rxi/classic)
-- [gamestate](https://github.com/vrld/hump/blob/master/gamestate.lua)
-- [json](https://github.com/actboy168/json.lua)
-- [lua-discordRPC](https://github.com/pfirsich/lua-discordRPC)
-- [lua-https](https://github.com/love2d/lua-https)
-- [Lua-Simple-XML-Parser](https://github.com/Cluain/Lua-Simple-XML-Parser)
+# Artist(s), Animator(s), Designer(s)
+- 8888eighteighteighteight
+- [fnaalex_drawz](https://x.com/FNAALEX_DRAWZ)
+- [molkey.xml](https://x.com/molkeyxml)
+- mono
+- [sonicboiforlife](https://www.tiktok.com/@sonicboi_backup)
+- [toonfoolery101](https://x.com/ToonFoolery101)
+- zander000
+
+# Composer(s) and Sound Designer(s)
+- [JogadorIce](https://www.youtube.com/@retrojogador)
+- [molkey.xml](https://x.com/molkeyxml)
+
+# Programmer(s)
+- [brayangd](https://github.com/brayangd0)
+- [JogadorIce](https://www.youtube.com/@retrojogador)
+- [mr.chaoss](https://github.com/mrchaoss1)
+- [mrmeep64](https://x.com/mrmeep64)
+
+# Voice Actor(s)
+- [molkey.xml](https://x.com/molkeyxml)
+- [thehallmonitorreal](https://www.youtube.com/@hallmonitorva)
