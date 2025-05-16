@@ -3,10 +3,10 @@ local TitleState = State:extend("TitleState")
 TitleState.initialized = false
 
 function TitleState:enter()
-	shader = Shader("compression")
-
 	util.playMenuMusic(false)
 
+	shader = Shader("compression")
+	shader:set("scaleFactor", 0.75)
 	--game.camera.shader = shader:get()
 
 	local whiteBg = Sprite(0, 0, paths.getImage("menus/title/White_BG"))
@@ -24,10 +24,10 @@ function TitleState:enter()
 	mouse:play("idle", true)
 	self:add(mouse)
 
-	local logo = Sprite(25, 25)
+	local logo = Sprite(75, 25)
 	logo.scale:set(1.15, 1.15)
-	logo:setFrames(paths.getSparrowAtlas("menus/title/PS1LOGO"))
-	logo:addAnimByPrefix("idle", "PS1LOGO loop", 24, true)
+	logo:setFrames(paths.getSparrowAtlas("menus/title/logo"))
+	logo:addAnimByPrefix("idle", "idle", 4, true)
 	logo:play("idle", true)
 	self:add(logo)
 

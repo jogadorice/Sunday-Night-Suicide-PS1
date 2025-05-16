@@ -15,4 +15,13 @@ function IntroState:enter()
 	IntroState.super.enter(self)
 end
 
+function IntroState:update(dt)
+    if controls:pressed("accept") then
+        --introVideo:stop()
+        game.switchState(TitleState(), true)
+    end
+
+    IntroState.super.update(self, dt)
+end
+
 return IntroState

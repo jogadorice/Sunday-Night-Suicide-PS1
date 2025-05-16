@@ -1,32 +1,23 @@
 #pragma language glsl3
+extern float scaleFactor;
 
-vec3 blur(Image tex, vec2 uv) {
-    // Simple 3x3 blur kernel
-    float offset = 1.0 / 300.0; // Adjust to control blur size
-    vec3 result = vec3(0.0);
-    result += Texel(tex, uv + vec2(-offset, -offset)).rgb * 0.0625;
-    result += Texel(tex, uv + vec2( 0.0, -offset)).rgb * 0.125;
-    result += Texel(tex, uv + vec2( offset, -offset)).rgb * 0.0625;
-    result += Texel(tex, uv + vec2(-offset,  0.0)).rgb * 0.125;
-    result += Texel(tex, uv + vec2( 0.0,  0.0)).rgb * 0.25;
-    result += Texel(tex, uv + vec2( offset,  0.0)).rgb * 0.125;
-    result += Texel(tex, uv + vec2(-offset,  offset)).rgb * 0.0625;
-    result += Texel(tex, uv + vec2( 0.0,  offset)).rgb * 0.125;
-    result += Texel(tex, uv + vec2( offset,  offset)).rgb * 0.0625;
-    return result;
-}
+vec4 effect(vec4 color, Image tex, vec2 uv, vec2 screen_coords) {
+    // Calculate sampling size
+    vec2 texSize = vec2(love_ScreenSize.x, love_ScreenSize.y);
+    vec2 scaledUV = floor(uv * texSize * scaleFactor) / (texSize * scaleFactor);
 
-vec3 posterize(vec3 color, float levels) {
-    return floor(color * levels) / levels;
-}
+    // Average a small 3x3 sample region around the scaledUV
+    vec2 offset = 1.0 / texSize / scaleFactor;
+    vec4 sum = vec4(0.0);
+    int count = 0;
 
-vec4 effect(vec4 color, Image tex, vec2 texCoord, vec2 screenCoords)
-{
-    // Blur the texture
-    vec3 col = blur(tex, texCoord);
+    for (int x = -1; x <= 1; ++x) {
+        for (int y = -1; y <= 1; ++y) {
+            vec2 sampleUV = scaledUV + vec2(x, y) * offset;
+            sum += Texel(tex, sampleUV);
+            count++;
+        }
+    }
 
-    // Reduce color depth to simulate compression
-    col = posterize(col, 5.0); // 5 levels per channel
-
-    return vec4(col, 1.0) * color;
+    return sum / float(count) * color;
 }
