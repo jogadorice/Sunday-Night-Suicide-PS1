@@ -70,7 +70,7 @@ function util.formatNumber(number)
 end
 
 function util.playMenuMusic(fade)
-	local menu = paths.getMusic("freakyMenu")
+	local menu = paths.getMusic("menuTheme")
 	if not game.sound.music or not game.sound.music:isPlaying() or game.sound.music.__source ~= menu then
 		if game.sound.music then game.sound.music:reset(true) end
 		game.sound.playMusic(menu, fade and 0 or ClientPrefs.data.menuMusicVolume / 100)

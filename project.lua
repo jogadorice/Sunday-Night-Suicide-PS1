@@ -6,7 +6,7 @@ return {
 	icon = "art/icon.png",
 	version = "1.0.0-dev",
 	package = "com.jogadorice.snsps1",
-	width = 960,
+	width = 720,
 	height = 720,
 	FPS = 60,
 	company = "Jogadorice",

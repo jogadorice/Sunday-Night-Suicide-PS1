@@ -7,6 +7,7 @@ local paths = {
 	atlases = {},
 	fonts = {},
 	noteskins = {},
+	videos = {},
 	persistantAssets = {"music/freakyMenu.ogg"}
 }
 
@@ -71,6 +72,7 @@ function paths.clearCache()
 	clear(paths.audio)
 	clear(paths.fonts)
 	clear(paths.noteskins)
+	clear(paths.videos)
 	collectgarbage()
 end
 
@@ -284,6 +286,19 @@ function paths.getLua(key)
 	if paths.exists(path, "file") then
 		return love.filesystem.load(path)
 	end
+	return nil
+end
+
+function paths.getVideo(key)
+	local path = paths.getPath("videos/" .. key .. ".ogv")
+	local obj = paths.videos[path]
+	if obj then return obj end
+	if paths.exists(path, "file") then
+		obj = love.graphics.newVideo(path)
+		paths.videos[path] = obj
+		return obj
+	end
+	print('oh no its returning "video" null NOOOO: ' .. key)
 	return nil
 end
 

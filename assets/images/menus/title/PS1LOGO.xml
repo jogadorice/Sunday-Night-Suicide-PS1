@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="PS1LOGO.png">
+<SubTexture name="PS1LOGO loop0000" x="0" y="0" width="414" height="309" frameX="-38" frameY="-19" frameWidth="493" frameHeight="337" />
+<SubTexture name="PS1LOGO loop0001" x="414" y="0" width="414" height="309" frameX="-38" frameY="-19" frameWidth="493" frameHeight="337" />
+</TextureAtlas>

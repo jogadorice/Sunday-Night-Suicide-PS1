@@ -70,6 +70,7 @@ CalibrationState = require 'funkin.states.calibration'
 UpdateState = require 'funkin.states.update'
 CreditsState = require "funkin.states.credits"
 TitleState = require "funkin.states.title"
+IntroState = require "funkin.states.intro"
 MainMenuState = require "funkin.states.mainmenu"
 ModsState = require "funkin.states.mods"
 StoryMenuState = require "funkin.states.storymenu"
@@ -103,7 +104,7 @@ function funkin.load()
 	love.window.setIcon(love.image.newImageData(Project.icon))
 	love.window.setMode(Project.width * res, Project.height * res, {
 		fullscreen = isMobile or ClientPrefs.data.fullscreen,
-		resizable = not isMobile,
+		resizable = false,
 		vsync = 0,
 		usedpiscale = false
 	})
@@ -153,7 +154,7 @@ function funkin.load()
 	local SoundTray = require "funkin.ui.soundtray".init(dimen).new()
 	game:add(SoundTray)
 
-	game.init(Project, TitleState)
+	game.init(Project, IntroState)
 
 	if ClientPrefs.data.resolution == -1 then
 		Camera.defaultResolution = love.graphics.getFixedScale()
