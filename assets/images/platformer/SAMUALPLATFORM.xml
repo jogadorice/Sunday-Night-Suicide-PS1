@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="SAMUALPLATFORM.png">
+<SubTexture name="SAMUALPLATFORM fall0000" x="1961" y="0" width="311" height="603" frameX="-7" frameY="-76" frameWidth="362" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM fall0001" x="1961" y="0" width="311" height="603" frameX="-7" frameY="-76" frameWidth="362" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0000" x="640" y="1291" width="314" height="624" frameX="-57" frameY="-35" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0001" x="954" y="1291" width="316" height="624" frameX="-58" frameY="-35" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0002" x="0" y="1291" width="318" height="625" frameX="-59" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0003" x="318" y="1291" width="322" height="625" frameX="-60" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0004" x="1270" y="1291" width="323" height="624" frameX="-61" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0005" x="1593" y="1291" width="325" height="624" frameX="-62" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0006" x="1270" y="1291" width="323" height="624" frameX="-61" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0007" x="318" y="1291" width="322" height="625" frameX="-60" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0008" x="0" y="1291" width="318" height="625" frameX="-59" frameY="-34" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM Idle0009" x="954" y="1291" width="316" height="624" frameX="-58" frameY="-35" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM jump0000" x="0" y="0" width="299" height="653" frameX="-20" frameY="-27" frameWidth="362" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM jump0001" x="0" y="0" width="299" height="653" frameX="-20" frameY="-27" frameWidth="362" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0000" x="336" y="653" width="379" height="635" frameX="-32" frameY="-70" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0001" x="715" y="653" width="368" height="635" frameX="-43" frameY="-69" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0002" x="1609" y="0" width="352" height="632" frameX="-58" frameY="-67" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0003" x="1273" y="0" width="336" height="638" frameX="-74" frameY="-65" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0004" x="621" y="0" width="326" height="645" frameX="-84" frameY="-64" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0005" x="299" y="0" width="322" height="650" frameX="-88" frameY="-62" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0006" x="947" y="0" width="326" height="645" frameX="-84" frameY="-64" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0007" x="0" y="653" width="336" height="638" frameX="-74" frameY="-65" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0008" x="1609" y="632" width="352" height="632" frameX="-58" frameY="-67" frameWidth="443" frameHeight="755" />
+<SubTexture name="SAMUALPLATFORM walking0009" x="1083" y="653" width="368" height="635" frameX="-43" frameY="-69" frameWidth="443" frameHeight="755" />
+</TextureAtlas>

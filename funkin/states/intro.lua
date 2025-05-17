@@ -1,7 +1,8 @@
 local IntroState = State:extend("IntroState")
 
 function IntroState:enter()
-
+    self.skipTransIn = true
+    self.skipTransOut = true
     love.mouse.setVisible(true)
 
     introVideo = Video(0, 0, "ps1_intro")

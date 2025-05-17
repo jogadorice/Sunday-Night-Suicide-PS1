@@ -8,7 +8,7 @@ return {
 	package = "com.jogadorice.snsps1",
 	width = 720,
 	height = 720,
-	FPS = 60,
+	FPS = 15,
 	company = "Jogadorice",
 
 	flags = {
